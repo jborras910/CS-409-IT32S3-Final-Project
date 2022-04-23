@@ -1,0 +1,35 @@
+ion-content {
+  --background: #f4ebd0;
+}
+.card-container {
+  padding: 10px;
+  ion-card-header {
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #122620;
+  }
+  img {
+    width: 150px;
+    margin: 10px auto;
+  }
+}
+.addtocartBtn {
+  --background: #d6ad60;
+  margin-bottom: 10px;
+  border: 1px solid #122620;
+  width: 65%;
+  text-align: center;
+  ion-icon {
+    padding-left: 5px;
+  }
+  button {
+    background-color: #d6ad60;
+    font-weight: 600;
+  }
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,111 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-title>HOME</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu" color="dark"> </ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon class="cart-icon" name="cart"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div
+    id="carouselExampleIndicators"
+    class="carousel slide"
+    data-ride="carousel"
+  >
+    <ol class="carousel-indicators">
+      <li
+        data-target="#carouselExampleIndicators"
+        data-slide-to="0"
+        class="active"
+      ></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          class="d-block w-100"
+          src="assets/slider-img1.jpg"
+          alt="First slide"
+        />
+      </div>
+
+      <div class="carousel-item">
+        <img
+          class="d-block w-100"
+          src="assets/slider-img2.jpg"
+          alt="Second slide"
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          class="d-block w-100"
+          src="assets/slider-img3.jpg"
+          alt="First slide"
+        />
+      </div>
+    </div>
+    <a
+      class="carousel-control-prev"
+      href="#carouselExampleIndicators"
+      role="button"
+      data-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a
+      class="carousel-control-next"
+      href="#carouselExampleIndicators"
+      role="button"
+      data-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div class="content-1">
+    <h1>Free Shipping On orders over ₱1,000</h1>
+    <p>1-3 day delivery depending on stock</p>
+  </div>
+
+  <div class="content-2">
+    <h1>BLOG POSTS</h1>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Dangers Of Aflatoxins In Kibble</ion-card-title>
+        <img src="assets/blogs-img1.jpg" alt="" />
+        <ion-card-subtitle>WHAT ARE AFLATOXINS?</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        Aflatoxins are naturally occurring toxins produced by the fungus
+        Aspergillus flavus. It is a mutagen (substances that can harm cells and
+        cause certain diseases, such as cancer) that is produced by certain
+        molds which can grow in soil, decaying vegetation, hay, and grains. It
+        is very dangerous when consumed by anyone.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Is Beef Good for Dogs?</ion-card-title>
+        <img src="assets/blogs-img2.jpg" alt="" />
+        <ion-card-subtitle
+          >Beef is one of the most common meats used in dog food.
+        </ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        Why? Because it is relatively affordable and healthy for dogs - and they
+        can’t seem to get enough of it. Our furry best friends can't seem to
+        resist the taste of natural beef. BidaBest dog food uses beef as one of
+        the main ingredients, so we wanted our consumers to know what exactly
+        beef can do for their doggo’s! Below is a list of benefits that your
+        fur-babies can get from beef.
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

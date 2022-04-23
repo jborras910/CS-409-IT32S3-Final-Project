@@ -1,0 +1,114 @@
+<ion-app>
+  <ion-menu menuId="main-menu" contentId="main">
+    <ion-content class="my-side-menu">
+      <div class="menu-header-bg"></div>
+      <div class="header-content">
+        <img src="assets/food quest logo2.png" alt="" />
+      </div>
+
+      <ion-list class="menu-items" lines="none">
+        <ion-menu-toggle class="">
+          <ion-item
+            class="ion-item active"
+            routerLink="/home"
+            id="home"
+            (click)="HomeFunction()"
+            ><img
+              class="icon"
+              src="https://img.icons8.com/glyph-neue/64/000000/home.png"
+            />
+            <a>HOME</a></ion-item
+          >
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item
+            class="ion-item"
+            id="wetfoods"
+            (click)="WetfoodsFunction()"
+            routerLink="/wetfoods"
+          >
+            <img
+              class="icon"
+              src="https://img.icons8.com/ios-filled/50/000000/empty-dog-bowl.png"
+            />
+            <a>WET FOODS</a></ion-item
+          >
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item
+            class="ion-item"
+            id="dryfoods"
+            (click)="dryfoodsFunction()"
+            routerLink="/dryfoods"
+            ><img
+              class="icon"
+              src="https://img.icons8.com/ios-filled/50/000000/doggy-bag.png"
+            />
+
+            <a>DRY FOODS</a></ion-item
+          >
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item
+            class="ion-item"
+            id="rawfoods"
+            (click)="rawfoodsFunction()"
+            routerLink="/rawfoods"
+            ><img
+              class="icon"
+              src="https://img.icons8.com/ios-filled/50/000000/dog-bowl.png"
+            />
+            <a>RAW FOODS</a></ion-item
+          >
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item
+            class="ion-item"
+            id="contactUs"
+            routerLink="/contact-us"
+            (click)="contactUsFunction()"
+            ><img
+              class="icon"
+              src="https://img.icons8.com/ios-filled/50/000000/apple-phone.png"
+            />
+            <a>CONTACT US</a></ion-item
+          >
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item
+            routerLink="/about-us"
+            class="ion-item"
+            id="aboutUs"
+            (click)="aboutUsFuntion()"
+            ><img
+              class="icon"
+              src="https://img.icons8.com/ios-filled/50/000000/about.png"
+            />
+            <a>ABOUT US</a></ion-item
+          >
+        </ion-menu-toggle>
+
+        <ion-menu-toggle>
+          <ion-item
+            class="ion-item"
+            id="developers"
+            (click)="developersFunction()"
+            routerLink="/developers"
+            ><img
+              class="icon"
+              src="https://img.icons8.com/ios-glyphs/30/000000/group.png"
+            />
+            <a>DEVELOPERS</a></ion-item
+          >
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

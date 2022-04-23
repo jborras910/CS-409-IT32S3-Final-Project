@@ -1,0 +1,92 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import url("http://fonts.cdnfonts.com/css/bruno-ace");
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+* {
+  font-family: "Bruno Ace", sans-serif;
+}
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.new-background-color {
+  --background: #d6ad60;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  ion-title {
+    -webkit-animation: tracking-in-expand 0.7s
+      cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  }
+}
+.addtocartBtn {
+  --background: #d6ad60;
+  margin-bottom: 10px;
+  border: 1px solid #122620;
+  width: 65%;
+  text-align: center;
+  ion-icon {
+    padding-left: 5px;
+  }
+  button {
+    background-color: #d6ad60;
+    font-weight: 600;
+  }
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-icon {
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  font-size: 26px;
+  margin-right: 12px;
+}
